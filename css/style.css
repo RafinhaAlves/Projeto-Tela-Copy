@@ -1,0 +1,128 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body, html {
+    height: 100%;
+}
+
+.login-container {
+    display: flex;
+    height: 100vh;
+    width: 100%;
+}
+
+/* Lado da Imagem */
+.side-image {
+    flex: 1;
+    background-image: url(../imagens/marD.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+/* Lado do Formulário */
+.side-form {
+    flex: 1;
+    background-color: #f1f1f1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.form-wrapper {
+    width: 100%;
+    max-width: 400px;
+    display: flex !important;
+    flex-direction: column !important; 
+    align-items: center !important; 
+    text-align: center;
+}
+
+/* Logo */
+.logo {
+    background-color: #634d8a;
+    width: 80px;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto 30px;
+}
+
+/* Card Branco */
+.login-card {
+    background: #fff;
+    padding: 30px;
+    border: 1px solid #ddd;
+    text-align: left;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+.input-group {
+    margin-bottom: 20px;
+}
+
+.input-group label {
+    display: block;
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 8px;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 2px;
+    outline-color: #2ea2cc;
+}
+
+/* Rodapé do Card */
+.form-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.remember {
+    font-size: 13px;
+    color: #777;
+    cursor: pointer;
+}
+
+.btn-login {
+    background-color: #2ea2cc;
+    color: white;
+    border: none;
+    padding: 8px 18px;
+    border-radius: 3px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.btn-login:hover {
+    background-color: #1e8bb7;
+}
+
+/* Links Extras */
+.extra-links {
+    margin-top: 25px;
+    text-align: left;
+}
+
+.extra-links a {
+    display: block;
+    color: #777;
+    text-decoration: none;
+    font-size: 13px;
+    margin-bottom: 10px;
+}
+
+.extra-links a:hover {
+    color: #2ea2cc;
+}

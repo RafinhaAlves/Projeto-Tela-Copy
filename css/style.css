@@ -1,22 +1,18 @@
-/* Reset básico */
+/* reset básico */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
-
-body, html {
-    height: 100%;
-}
-
+/* definir area para o container */
 .login-container {
     display: flex;
     height: 100vh;
     width: 100%;
 }
 
-/* Lado da Imagem */
+/* lado da imagem */
 .side-image {
     flex: 1;
     background-image: url(../imagens/marD.jpg);
@@ -24,79 +20,72 @@ body, html {
     background-position: center;
 }
 
-/* Lado do Formulário */
+/* lado do formulário */
 .side-form {
     flex: 1;
     background-color: #f1f1f1;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     padding: 20px;
 }
-
+/* parte entre logo e formulário */   
 .form-wrapper {
-    width: 100%;
-    max-width: 400px;
-    display: flex !important;
-    flex-direction: column !important; 
-    align-items: center !important; 
-    text-align: center;
+    margin-bottom: 25px; /* espaçamento entre logo e formulário */
+}
+/* logo tamanho */
+.form-wrapper img {
+    width: 90px;
+    height: 90px;
 }
 
-/* Logo */
-.logo {
-    background-color: #634d8a;
-    width: 80px;
-    height: 80px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 0 auto 30px;
-}
-
-/* Card Branco */
+/* card branco */
 .login-card {
     background: #fff;
     padding: 30px;
+    width: 400px;
     border: 1px solid #ddd;
     text-align: left;
     box-shadow: 0 2px 5px rgba(0,0,0,0.05);
 }
-
+/*grupo user e password*/
 .input-group {
-    margin-bottom: 20px;
+    margin-bottom: 20px; /* espaçamento entre os campos */
 }
-
+/* rótulos dos campos */
 .input-group label {
     display: block;
     font-size: 14px;
     color: #666;
     margin-bottom: 8px;
 }
-
+ /* campos de entrada */
 .input-group input {
     width: 100%;
-    padding: 10px;
+    padding: 15px; /* distância entre o texto e a borda */
+    height: 50px; /* altura do campo */
     border: 1px solid #ccc;
     border-radius: 2px;
-    outline-color: #2ea2cc;
+    outline-color: #2380a1;
+    font-size: 16px;
 }
 
-/* Rodapé do Card */
+/* rodapé  card de login */
 .form-footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-
+/* checkbox de lembrar */
 .remember {
     font-size: 13px;
     color: #777;
     cursor: pointer;
 }
-
+/* botão de login */
 .btn-login {
-    background-color: #2ea2cc;
+    background-color: #177597;
     color: white;
     border: none;
     padding: 8px 18px;
@@ -104,13 +93,14 @@ body, html {
     cursor: pointer;
     font-weight: bold;
 }
-
+/* efeito hover no botão de login */
 .btn-login:hover {
     background-color: #1e8bb7;
 }
 
-/* Links Extras */
+/* links extras */
 .extra-links {
+    width: 400px;
     margin-top: 25px;
     text-align: left;
 }

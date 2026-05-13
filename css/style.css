@@ -116,3 +116,25 @@
 .extra-links a:hover {
     color: #2ea2cc;
 }
+
+.input-with-icon {
+    position: relative; /* Base para o ícone se localizar */
+    width: 100%;
+}
+
+.input-with-icon input {
+    width: 100%;
+    padding: 10px 35px 10px 10px; /* Adiciona espaço na direita para o ícone não cobrir o texto */
+    border: 1px solid #ccc;
+    outline-color: #2ea2cc;
+}
+
+.input-with-icon i {
+    position: absolute;
+    right: 10px;      /* Distância da borda direita */
+    top: 50%;         /* Centraliza verticalmente */
+    transform: translateY(+90%); /* Ajuste fino do centro vertical */
+    color: #888;      /* Cor do ícone */
+    font-size: 17px;
+    pointer-events: none; /* Garante que clicar no ícone ainda selecione o input */
+}
